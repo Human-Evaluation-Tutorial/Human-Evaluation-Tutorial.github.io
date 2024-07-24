@@ -1,1 +1,1 @@
-# ing-2024-human-eval-tutorial
+# INLG 2024 Tutorial: Human Evaluation on NLP System Quality
