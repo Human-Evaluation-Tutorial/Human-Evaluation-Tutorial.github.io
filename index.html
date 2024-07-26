@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
+  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>INLG 2024 Tutorial: Human Evaluation on NLP System Quality </title>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-2 publication-title">
+              <span style="font-size: 80%">INLG 2024 Tutorial:</span><br />
+              Human Evaluation on NLP System Quality
+            </h1>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <table>
+            <tr>
+                <!-- <th scope="row">TR-7</th> -->
+                <td width="14.3%" style="text-align: center; padding: 3px"><img width="150px" height="150px" src="static/imgs/avatar.jpeg"></td>
+                <td width="14.3%" style="text-align: center; padding: 3px"><img width="150px" height="150px" src="static/imgs/avatar.jpeg"></td>
+                <td width="14.3%" style="text-align: center; padding: 3px"><img width="150px" height="150px" src="static/imgs/avatar.jpeg"></td>
+                <td width="14.3%" style="text-align: center; padding: 3px"><img width="150px" height="150px" src="static/imgs/avatar.jpeg"></td>
+                <td width="14.3%" style="text-align: center; padding: 3px"><img width="150px" height="150px" src="static/imgs/avatar.jpeg"></td>
+            </tr>
+
+            <tr>
+              <!-- <th scope="row">TR-7</th> -->
+              <td width="14.3%" style="text-align: center"><a href="https://" style="border-radius: 50%">Anya Belz</a></td>
+              <td width="14.3%" style="text-align: center"><a href="https://" style="border-radius: 50%">Simon Mille</a></td>
+              <td width="14.3%" style="text-align: center"><a href="https://" style="border-radius: 50%">João Sedoc</a></td>
+              <td width="14.3%" style="text-align: center"><a href="https://" style="border-radius: 50%">Craig Thomson</a></td>
+              <td width="14.3%" style="text-align: center"><a href="https://" style="border-radius: 50%">Rudali Huidrom</a></td>
+            </tr>
+            </table>
+
+            </span>
+          </div>
+          <div class="is-size-6 publication-authors">
+            <span class="author-block">ADAPT Research Centre, Dublin City University</span>
+          </div>
+          <div class="is-size-6 publication-authors">
+            <span class="author-block">New York University</span>
+          </div>
+          <br />
+          <div class="is-size-5 publication-authors">
+            <b> TBA </b>
+          </div>
+          
+
+          <div class="is-size-5 publication-authors">
+            Zoom link available on <a href="" target="_blank">INLG</a>
+          </div>
+          <div class="is-size-6 publication-authors">
+            We will release all slides and colab notebooks from the tutorial.
+          </div>
+          <br />
+          <div class="is-size-5 publication-authors">
+            <!-- QnA: <a href="https://tinyurl.com/retrieval-lm-tutorial" target="_blank"><b></b></a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Tutorial Description</h2>
+        <div class="content has-text-justified">
+          <p>
+            Human evaluation has always been considered the most reliable form of evaluation in Natural Language Processing (NLP), but recent research has thrown up a number of concerning issues, including in the design (Belz et al., 2020; Howcroft et al., 2020) and execution (Thomson et al., 2024) of human evaluation experiments. Standardisation and comparability across different experiments is low, as is reproducibility in the sense that repeat runs of the same evaluation often do not support the same main conclusions, quite apart from not producing similar scores.
+          </p>
+          <p>
+            The current situation is likely to be in part due to how human evaluation is viewed in NLP: not as something that needs to be studied and learnt before venturing into conducting an evaluation experiment, but something that anyone can throw together without prior knowledge by pulling in a couple of students from the lab next door.
+          </p>
+          <p>
+            Our aim with this tutorial is primarily to inform participants about the range of options available and choices that need to be made when creating human evaluation experiments, and what the implications of different decisions are. Moreover, we will present best practice principles and practical tools that help researchers design scientifically rigorous, informative and reliable experiments.
+          </p>
+          <p>
+            As the next section indicates we are planning for a morning of presentations and brief exercises, followed by a practical session in the afternoon where participants will be supported in creating evaluation experiments and analysing results from them, using tools and other resources provided by the tutorial team.
+          </p>
+          <p>
+            We aim to address all aspects of human evaluation of system outputs in a research setting, equipping participants with the knowledge, tools, resources and hands-on experience needed to design and execute rigorous and reliable human evaluation experiments. Take-home materials and online resources will continue to support participants in conducting experiments after the tutorial.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Schedule</h2>
+        <p>
+          Our tutorial will be held on 24th September 2024.
+          <!-- <em>Slides may be subject to updates.</em> -->
+        </p>
+        <br>
+
+        <div class="content has-text-justified">
+
+          <style type="text/css">
+          .tg  {border-collapse:collapse;border-spacing:0;}
+          .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+            overflow:hidden;padding:10px 5px;word-break:normal;}
+          .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+            font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+          .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+          .tg .tg-0lax{text-align:left;vertical-align:top}
+          </style>
+          <table class="tg">
+          <!-- <thead>
+            <tr>
+              <th class="tg-0pky">Time</th>
+              <th class="tg-0lax">Unit</th>
+              <th class="tg-0lax">Presenter</th>
+            </tr>
+          </thead> -->
+          <tbody>
+            <tr>
+              <!-- <td class="tg-0lax">10:00—10:15</td> -->
+              <td class="tg-0lax"><b>Unit 1</b></td>
+              <td class="tg-0lax">Introduction - Human Evaluation in NLP <a href="" target='_blank'>[Slides]</a></td>
+              <!-- <td class="tg-0lax">Anya</td> -->
+            </tr>
+            <tr>
+              <!-- <td class="tg-0lax">10:15—10:50</td> -->
+              <td class="tg-0lax"><b>Unit 2</b></td>
+              <td class="tg-0lax">Anatomy of a Human Evaluation <a href="" target='_blank'>[Slides]</a></td>
+              <!-- <td class="tg-0lax">Anya</td> -->
+            </tr>
+            <tr>
+              <!-- <td class="tg-0lax">10:50-11:25</td> -->
+              <td class="tg-0lax"><b>Unit 3</b></td>
+              <td class="tg-0lax">Quality Criteria – Meaning, Definition, Operationalisation <a href="" target='_blank'>[Slides]</a> <a href="" target='_blank'>[Colab Notebook]</a></td>
+              <!-- <td class="tg-0lax">Simon, Anya, Rudali</td> -->
+            </tr>
+            </tr>
+            <tr>
+              <!-- <td class="tg-0lax">11:25—11:30</td> -->
+              <td class="tg-0lax"><b>Unit 4</b></td>
+              <td class="tg-0lax">Experimental Design <a href="" target='_blank'>[Slides]</a> <a href="" target='_blank'>[Colab Notebook]</a></td>
+              <!-- <td class="tg-0lax">Anya, Craig</td> -->
+              <!-- <td class="tg-0lax"></td> -->
+            </tr>
+            <!--
+            <tr>
+              <td class="tg-0lax">11:30—11:45</td>
+              <td class="tg-0lax">Coffee break</td>
+              <td class="tg-0lax"></td>
+            </tr>
+            -->
+            <tr>
+              <!-- <td class="tg-0lax">11:30—11:55</td> -->
+              <td class="tg-0lax"><b>Unit 5</b></td>
+              <td class="tg-0lax">Analysis of results <a href="" target='_blank'>[Slides]</a> <a href="" target='_blank'>[Colab Notebook]</a></td>
+              <!-- <td class="tg-0lax">João</td> -->
+            </tr>
+            <tr>
+              <!-- <td class="tg-0lax">11:55—12:10</td> -->
+              <td class="tg-0lax"><b>Unit 6</b></td>
+              <td class="tg-0lax">Reproducibility <a href="" target='_blank'>[Slides]</a> <a href="" target='_blank'>[Colab Notebook]</a></td>
+              <!-- <td class="tg-0lax">Anya, Craig</td> -->
+            </tr>
+            <tr>
+              <!-- <td class="tg-0lax">12:10—12:50</td> -->
+              <td class="tg-0lax"><b>Unit 7</b></td>
+              <td class="tg-0lax">Experiment Implementation <a href="" target='_blank'>[Slides]</a> <a href="" target='_blank'>[Colab Notebook]</a></td>
+              <!-- <td class="tg-0lax">Craig</td> -->
+            </tr>
+            <tr>
+              <!-- <td class="tg-0lax">12:50—12:55</td> -->
+              <td class="tg-0lax"><b>Unit 8</b></td>
+              <td class="tg-0lax">Quality Assurance <a href="" target='_blank'>[Slides]</a> <a href="" target='_blank'>[Colab Notebook]</a></td>
+              <!-- <td class="tg-0lax">Craig, Rudali</td> -->
+            </tr>
+            <tr>
+              <!-- <td class="tg-0lax">12:55—13:00</td> -->
+              <td class="tg-0lax"><b>Unit 9</b></td>
+              <td class="tg-0lax">Practical Session <a href="" target='_blank'>[Colab Notebook]</a></td>
+              <!-- <td class="tg-0lax"></td> -->
+            </tr>
+            <tr>
+              <!-- <td class="tg-0lax">12:55—13:00</td> -->
+              <td class="tg-0lax"><b>Unit 10</b></td>
+              <td class="tg-0lax">Summary/Take-Home Essentials; Pointers to Post-Tutorial Resources <a href="" target='_blank'>[Slides]</a> <a href="" target='_blank'>[References]</a></td>
+              <!-- <td class="tg-0lax"></td> -->
+            </tr>
+          </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Reading List</h2>
+        <p>TBA</p>
+
+     
+        <!-- <p> The full list of papers can be found in our recent survey: <a href="https://arxiv.org/abs/2310.10844">Survey of Vulnerabilities in Large Language Models Revealed by Adversarial Attacks</a>, below we highlight a small subset of the papers where <b>bold papers</b> will be discussed in detail during our tutorial. The list is incomplete and will be updated close to the conference time. See you at ACL24! </p>
+
+        <br />
+          <h3 class="title is-5">Prerequisites</h3>
+         <ul>
+            <li><a href="https://arxiv.org/abs/1706.03762">Attention is all you need</a>, Vaswani et al., 2017.</li>
+         </ul>
+        
+        <br />
+        
+          <h3 class="title is-5">Section 2: NLP and Security Background </h3>
+        <ul>
+          <li><a href="https://arxiv.org/abs/2307.10719"><b>LLM Censorship: A Machine Learning Challenge or a Computer Security Problem?</b></a> (Glukhov et al., 2023)</li>
+          <li><a href="https://arxiv.org/abs/2308.14840"><b>Identifying and Mitigating the Security Risks of Generative AI</b></a> (Barrett et al., 2023)</li>
+          <li><a href="https://arxiv.org/abs/2203.02155">Training language models to follow instructions with human feedback</a> (Ouyang et al., 2023)</li>
+
+        </ul>
+        
+        <br />
+        <h3 class="title is-5">Section 3: Text-only Attacks</h3>
+        <ul>
+          <li><a href="https://arxiv.org/abs/2307.15043"><b>Universal and Transferable Adversarial Attacks on Aligned Language Models</b></a> (Zou et al., 2023)</li>
+          <li>To Be Completed</li>
+
+        </ul>
+        
+        <br />
+
+        <h3 class="title is-5">Section 4: Multi-modal Attacks</h3>
+
+        <ul>
+          <li><a href="https://arxiv.org/abs/2307.14539"><b>Plug and Pray: Exploiting off-the-shelf components of Multi-Modal Models</b></a> (Shayegani et al., 2023)</li>
+          <li><a href="https://arxiv.org/abs/2306.15447"><b>Are aligned neural networks adversarially aligned?</b></a> (Carlini et al., 2023)</li>
+          <li>To Be Completed</li>
+
+        </ul>
+
+        <br />
+
+        <h3 class="title is-5">Section 5: Additional Attacks</h3>
+
+        <ul>
+          <li><a href="https://arxiv.org/abs/2302.12173"><b>Not what you've signed up for: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection</b></a> (Greshake et al., 2023)</li>
+          <li><a href="https://arxiv.org/abs/2306.04959"><b>FedMLSecurity: A Benchmark for Attacks and Defenses in Federated Learning and LLMs</b></a> (Han et al., 2023)</li>
+          <li><a href="https://arxiv.org/pdf/2308.09183"><b>RatGPT: Turning online LLMs into Proxies for Malware Attacks</b></a> (Beckerich et al., 2023)</li>
+          <li><a href="https://arxiv.org/pdf/2308.01990"><b>From Prompt Injections to SQL Injection Attacks: How Protected is Your LLM-Integrated Web Application?</b></a> (Pedro et al., 2023)</li>
+          
+        </ul>
+
+        <br />
+
+        <h3 class="title is-5">Section 6: Causes and Defenses </h3>
+        
+        <ul>
+            <li><a href="https://arxiv.org/abs/2303.04381"><b>Automatically Auditing Large Language Models via Discrete Optimization</b></a> (Jones et al., 2023)</li>
+            <li><a href="https://arxiv.org/abs/2302.08582"><b>Pretraining language models with human preferences</b></a> (Korbak et al., 2023)</li>  
+           <li><a href="https://arxiv.org/pdf/2309.00614.pdf"><b>Baseline Defenses For Adversarial Attacks Against Aligned Language Models</b></a> (Jain et al., 2023)</li>
+           <li><a href="https://arxiv.org/abs/2309.02705"><b>Certifying LLM Safety against Adversarial Prompting</b></a> (Kumar et al., 2023)</li>
+           <li><a href="https://arxiv.org/abs/2307.01225"><b>Interpretability and Transparency-Driven Detection and Transformation of Textual Adversarial Examples (IT-DT)</b></a> (Sabir et al., 2023)</li>
+          <li><a href="https://arxiv.org/abs/2308.07308"><b>LLM Self Defense: By Self Examination, LLMs Know They Are Being Tricked</b></a> (Helbling et al., 2023)</li>
+          <li><a href="https://arxiv.org/abs/2307.16630"><b>Text-CRS: A Generalized Certified Robustness Framework against Textual Adversarial Attacks</b></a> (Zhang et al., 2023)</li>
+          <li><a href="https://www.amazon.science/publications/towards-building-a-robust-toxicity-predictor"><b>Towards building a robust toxicity predictor</b></a> (Bespalov et al., 2023)</li>
+          <li><a href="https://aclanthology.org/2022.findings-naacl.137/"><b>Exploring the Universal Vulnerability of Prompt-based Learning Paradigm</b></a> (Xu et al., 2022)</li>
+          <li><a href="https://arxiv.org/abs/2209.07858"><b>Red Teaming Language Models to Reduce Harms: Methods, Scaling Behaviors, and Lessons Learned</b></a> (Ganguli et al., 2022)</li>
+          <li><a href="https://arxiv.org/abs/2202.03286"><b>Red Teaming Language Models with Language Models</b></a> (Perez et al., 2022)</li>
+        </ul> -->
+
+        <!--
+        <br />
+        <h3 class="title is-5">Section 7: Challenges & Opportunities</h3>
+        <ul>
+          <li><a href="https://arxiv.org/abs/2305.14625">KNN-LM Does Not Improve Open-ended Text Generation</a> (Wang et al., 2023)</li>
+          <li><a href="https://arxiv.org/abs/2212.09146">Can Retriever-Augmented Language Models Reason? The Blame Game Between the Retriever and the Language Model</a> (BehnamGhader et al., 2022)</li>
+          <li><a href="https://arxiv.org/abs/2212.14024">Demonstrate-Search-Predict: Composing retrieval and language models for knowledge-intensive NLP</a> (Khattab et al., 2022)</li>
+        </ul>
+      -->
+
+      </div>
+
+
+    </div>
+</section>
+
+<!--
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{llm-vulnerability-tutorial,
+  author    = {X},
+  title     = { NAACL 2024 Tutorial: LLM Vunerability},
+  journal   = { NAACL 2024 },
+  year      = { 2024 },
+}</code></pre>
+  </div>
+</section>
+-->
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link" href="https://github.com/llm-vunerability" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This means you are free to borrow the <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+            we just ask that you link back to this page in the footer.
+            Please remember to remove the analytics code included in the header of the website which
+            you do not want on your website.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
