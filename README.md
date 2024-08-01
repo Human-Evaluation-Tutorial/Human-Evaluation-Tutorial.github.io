@@ -1,4 +1,4 @@
-# INLG 2024 Tutorial: Human Evaluation on NLP System Quality
+# INLG 2024 Tutorial: Human Evaluation of NLP System Quality
 
 The code is adapted from the [Nerfies website](https://nerfies.github.io) and https://github.com/llm-vulnerability/llm-vulnerability.github.io.
 
