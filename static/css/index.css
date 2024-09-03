@@ -155,3 +155,19 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+
+.image-cell {
+  padding: 3px;
+  text-align: center;
+  width: 14.3%;
+  vertical-align: middle;
+}
+
+.fixed-size-img {
+  width: 150px; /* Match the size of photo 4 */
+  height: 150px; /* Match the size of photo 4 */
+  object-fit: cover; /* Ensures the image covers the entire area, cropping if necessary */
+  display: block;
+  margin: 0 auto; /* Center the image */
+  border: 1px solid transparent;
+}
