@@ -156,18 +156,89 @@ body {
   border-radius: 5px;
 }
 
-.image-cell {
+/* .image-cell {
   padding: 3px;
   text-align: center;
   width: 14.3%;
   vertical-align: middle;
+} */
+
+/* .fixed-size-img {
+  width: 150px; 
+  height: 150px; 
+  object-fit: cover; 
+  display: block;
+  margin: 0 auto; 
+  border: 1px solid transparent;
+} */
+
+/* Default styling for the image container and cells */
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Even spacing between images */
+}
+
+.image-cell {
+  flex: 1 1 18%; /* Default for desktop: 18% width per image */
+  margin: 5px; /* Space between images */
+  text-align: center; /* Centers the captions under the images */
+  box-sizing: border-box;
 }
 
 .fixed-size-img {
-  width: 150px; /* Match the size of photo 4 */
-  height: 150px; /* Match the size of photo 4 */
+  width: 100%; /* Image takes up full width of the cell */
+  height: auto; /* Keeps the aspect ratio */
   object-fit: cover; /* Ensures the image covers the entire area, cropping if necessary */
   display: block;
-  margin: 0 auto; /* Center the image */
-  border: 1px solid transparent;
+  margin-bottom: 5px; /* Space between image and caption */
 }
+
+.image-caption {
+  display: block;
+  text-align: center;
+  margin-top: 5px;
+  text-decoration: none; /* Remove underline from links */
+  color: #000; /* Adjust color as needed */
+  font-size: 18px; /* Larger text size for desktop */
+}
+
+@media (max-width: 600px) {
+  .image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns for mobile */
+    gap: 10px; /* Space between images */
+  }
+
+  /* Place each image in its respective row */
+  .image-cell:nth-child(1) {
+    grid-column: 1 / -1; /* First image spans the entire width */
+  }
+
+  .image-cell:nth-child(2),
+  .image-cell:nth-child(3) {
+    grid-column: span 1; /* Second and third images each take up half width */
+  }
+
+  .image-cell:nth-child(4),
+  .image-cell:nth-child(5) {
+    grid-column: span 1; /* Fourth and fifth images each take up half width */
+  }
+
+  /* Ensure the fourth and fifth images are in the third row */
+  .image-cell:nth-child(4) {
+    grid-row: 3; /* Place the fourth image in the third row */
+  }
+
+  .image-cell:nth-child(5) {
+    grid-row: 3; /* Place the fifth image in the third row */
+    justify-self: center; /* Center the fifth image in its cell */
+  }
+
+  .image-caption {
+    font-size: 16px; /* Larger text size on mobile */
+  }
+}
+
+
+
